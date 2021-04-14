@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.8"
+  - "3.7"
 
 before_install:
   - pip install pycodestyle
@@ -10,6 +10,6 @@ install:
   - pipenv install --dev
 
 script:
-  - pytest -m pytest tests/
+  - python -m pytest tests/
   - coverage run --source="src/" -m pytest
   - pycodestyle src/ --ignore=E722,E501,E402
