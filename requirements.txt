@@ -6,3 +6,4 @@ flask-swagger-ui
 marshmallow-sqlalchemy
 pyjwt
 gunicorn
+psycopg2
