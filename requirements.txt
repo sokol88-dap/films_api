@@ -7,3 +7,5 @@ marshmallow-sqlalchemy
 pyjwt
 gunicorn
 psycopg2
+requests
+bs4
