@@ -10,6 +10,13 @@
             "request": "launch",
             "program": "wsgi.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Sanic API",
+            "type": "python",
+            "request": "launch",
+            "program": "sanic_app.py",
+            "console": "integratedTerminal"
         }
     ]
 }
