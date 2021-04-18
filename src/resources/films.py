@@ -16,7 +16,7 @@ class FilmListApi(Resource):
 
     film_schema = FilmSchema()
 
-    @token_required
+    # @token_required
     def get(self, uuid=None):
         """Get request for description one or all films.
             :param uuid: Unique id of film (optional)
@@ -33,6 +33,7 @@ class FilmListApi(Resource):
             return '', 404
         return self.film_schema.dump(film), 200
 
+    # @token_required
     def post(self):
         try:
             film = self.film_schema.load(request.json, session=db.session)
